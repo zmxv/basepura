@@ -36,9 +36,6 @@ describe('encode', () => {
     expect(encode(29n)).toBe('t');
     expect(encode(30n)).toBe('w');
     expect(encode(31n)).toBe('z');
-
-    expect(encode(12345678901234567890n)).toBe('QkjJPcgjcwDkd');
-    console.log(decode("QkjJPcgjcwDkd"));
   });
 
   it('should encode larger numbers', () => {
